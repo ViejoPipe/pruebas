@@ -1,6 +1,6 @@
 // App.jsx
 import './styles/App.css'
-import Navbar from './components/Navbar'
+import Navbar from './components/NavBar'
 import HeroSection from './components/HeroSection'
 import Services from './components/Services'
 import BenCon from './components/BenCon'
