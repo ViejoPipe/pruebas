@@ -1,0 +1,137 @@
+.hero-section {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas si es necesario */
+  padding-left: 5%;
+  padding-top: 0%;
+  align-items: center; /* Centra los elementos verticalmente */
+  padding-bottom: 6.5%;
+}
+
+.text-container {
+  margin-top: 1%;
+  flex: 1; /* Permite que el contenedor de texto ocupe el espacio disponible */
+  text-align: left;
+  margin-right: 5%;
+  margin-bottom: 3%; /* Reducido */
+  margin-left: 1.5%;
+  
+}
+
+.title-hero {
+  color: #0033A0;
+  font-size: 4.5vw; /* Usa vw para tamaños relativos basados en el ancho de la ventana */
+  margin-bottom: 0.1vw; /* Reducido */
+  line-height: 1; /* Ajustado */
+  margin-right: 10%;
+}
+
+.subtitle-hero {
+  color: #05131e;
+  font-size: 1.5vw; /* Usa vw para tamaños relativos basados en el ancho de la ventana */
+  margin-bottom: 1.5vw; /* Reducido */
+  font-weight: 800px;
+  line-height: 1.2; /* Ajustado */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#button-hero {
+  background-color: #0033A0;
+  font-size: 75%;
+  color: #fff;
+  padding: 1.2vw 1.6vw;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold; /* Cambiado a 'bold' para negrita */
+  text-align: center; /* Asegura que el texto esté centrado */
+  transition: background-color 0.3s, transform 0.3s;
+  display: inline-block; /* Para ayudar con el centrado */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#button-hero:hover {
+  background-color: #002080; /* Un azul más oscuro en hover */
+  transform: scale(1.05); /* Un ligero aumento en tamaño */
+}
+
+.image-container {
+  flex: 1;
+  max-width: 100%;
+  margin-left: 0%;
+  margin-right: 4%;
+  margin-top: 2%
+
+}
+
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 3rem;
+}
+
+.social-proof {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: -10px;
+  margin: 20px 0;
+  margin-right: 15%;
+  color: #666;
+}
+
+.proof-text {
+  margin: 0;
+  font-size: 1vw;
+  font-weight: 500;
+  margin-right: 5%;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .hero-section {
+      flex-direction: column;
+      text-align: center;
+      padding: 2% 5%;
+  }
+
+  .text-container {
+      margin-right: 0;
+      text-align: center;
+      
+  }
+  
+  .title-hero {
+      font-size: 8vw;
+      margin-right: 2px; /* Ajusta el tamaño del título en pantallas pequeñas */
+  }
+
+  .subtitle-hero {
+      font-size: 3.8vw; /* Ajusta el tamaño del subtítulo en pantallas pequeñas */
+  }
+
+  .button-hero {
+      margin-bottom: 20px;
+  }
+
+  .social-proof {
+    flex-direction: row;
+    gap: 10px;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .proof-text {
+    font-size: 3.5vw;
+  }
+
+  .proof-separator {
+    display: none;
+  }
+  .image-container{
+    margin-right: 0;
+    margin-left: 15px;
+  }
+}

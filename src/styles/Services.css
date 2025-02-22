@@ -1,0 +1,108 @@
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4% 5% 5% 5%; /* Aumenta el padding superior */
+  max-width: 85%;
+  margin: 1% auto;
+  background-color: #0033A0; /* Fondo azul */
+  border-radius: 50px;
+}
+
+/* Estado inicial antes de que el elemento sea visible */
+.fade {
+  opacity: 0;
+  transform: translateY(30px) scale(0.95);
+}
+
+/* Al volverse visible se ejecuta la animación definida en fadeUp */
+.visible {
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+/* Definición de keyframes para el efecto de aparición */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(15px) scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.services__image {
+  width: 25%; /* Imagen más pequeña */
+  margin-left: 10%;
+}
+
+.services__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 130%; /* Reducido proporcionalmente */
+  color: white; /* Texto blanco */
+}
+
+.services__content p {
+  margin: 5% 20% 5% 5%;
+  margin-top: 10%; /* Margen superior ajustado */
+  text-align: justify;
+}
+
+.services__button {
+  background-color: #e2e72b; /* Botón amarillo */
+  font-size: 70%;
+  color: #0033A0; /* Texto azul */
+  padding: 1.2vw 1.6vw;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+  display: inline-block;
+  position: static;
+  margin-left: 5%;
+}
+
+.services__button:hover {
+  background-color: #e2e72b;
+  transform: scale(1.03);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .services {
+    flex-direction: row;
+    max-width: 90%;
+    align-self: center;
+    margin-left: 15px;
+    
+  }
+  .services__image {
+    width: 30%;
+    margin-left: 10px;
+    margin-bottom: 3%;
+    margin-right: 10px;
+  }
+  .services__content {
+    align-items: center;
+    font-size: 2.8vw;
+  }
+  .services__content p {
+    text-align: justify;
+    margin-top: 30px;
+    margin-right: 10px;
+  }
+  .services__button {
+    margin-top: 5px;
+    font-size: 4vw;
+    padding: 1vw 2vw;
+  }
+}

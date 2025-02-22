@@ -1,0 +1,69 @@
+#plans-section {
+  width: 100%;
+  height: auto;
+  background: radial-gradient(
+  circle, 
+  #0033A0 40%,   /* Centro: azul claro */
+  #0450b4 60%,   /* Transición intermedia */
+  #00408B 80%,   /* Hacia las esquinas: azul oscuro */
+  #021f4e 100%   /* Esquinas: muy oscuro */
+);
+  padding: 2% 0 5%;
+  text-align: center;
+  color: white;
+}
+
+#plans-title {
+  font-size: clamp(2rem, 3vw, 3rem);
+  margin-bottom: 1%;
+  margin-top: 3%;
+}
+
+#plans-subtitle {
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  margin: 0 auto 4%;
+  max-width: 80%;
+  line-height: 1.4;
+
+}
+
+#plans-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+  margin-bottom: 3%;
+  flex-wrap: wrap;
+}
+
+#plans-footer {
+  font-size: clamp(0.9rem, 1.2vw, 1.2rem);
+  color: #fff;
+  
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  #plans-cards-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Espacio entre las cards en móviles */
+  }
+}
+
+@media (max-width: 480px) {
+  #plans-title {
+    font-size: 6vw;
+  }
+
+  #plans-subtitle {
+    font-size: 4vw;
+  }
+
+  #plans-footer {
+    font-size: 3vw;
+  }
+}

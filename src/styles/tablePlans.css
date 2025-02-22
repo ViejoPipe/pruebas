@@ -1,0 +1,175 @@
+#tables-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 20px 0 5%;
+  background-color: #f9f9f9;
+}
+
+#table-title{
+  color: #0033A0; /* Color primario */
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 4%;
+}
+
+#plans-table {
+  width: 80%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+#plans-table th, #plans-table td {
+  padding: 8px;
+}
+
+#plans-table th {
+  background-color: #0033A0;
+  text-align: left;
+}
+
+#plans-tbody {
+  transition: opacity 0.5s ease-in-out;
+}
+
+#plans-tbody tr.hidden {
+  opacity: 0.5;
+}
+
+#table-fade {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  margin-top: -20px;
+}
+
+#button {
+  background-color: #0033A0;
+  font-size: 100%; /* Asegúrate de que este valor coincida con el de .button-hero */
+  color: white;
+  padding: 1.2vw 1.6vw;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+  display: inline-block; /* Para ayudar con el centrado */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  margin-top: 40px;
+  position: relative; /* Por defecto, quieto */
+}
+
+#button.movable {
+  position: sticky;
+  bottom: 10px;
+}
+
+#button:hover {
+  background-color: #002080;
+  transform: scale(1.05);
+}
+
+#plans-table {
+  width: 80%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+#plans-table th, #plans-table td {
+  border: none;
+  padding: 20px;
+  text-align: center;
+}
+
+#plans-table th {
+  background-color: #0033A0;
+  color: white;
+  font-size: 24px;
+}
+
+#plans-table tr:nth-child(even) {
+  background-color: #03aec40c;
+}
+
+#plans-table td {
+  font-size: 20px;
+  color: #333;
+}
+#table-info{
+  margin-top: 3%;
+  color: #05131e;
+  font-size: 1.5vw; /* Usa vw para tamaños relativos basados en el ancho de la ventana */
+  margin-bottom: 5vw; /* Reducido */
+  font-weight: 800px;
+  line-height: 1.2; /* Ajustado */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 60%;
+  text-align: center;
+}
+
+#video-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0px auto;
+  padding: 0 20px;
+  aspect-ratio: 16/9;
+}
+
+#youtube-video {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  #plans-header {
+    flex-direction: column;
+  }
+  #table-title{
+    font-size: 2rem;
+    padding-bottom: 20px;
+  }
+
+  #plans-header h1 {
+    font-size: 36px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  #plans-header-image {
+    max-width: 150px;
+    padding-left: 0;
+    margin-bottom: 15px;
+  }
+
+  #plans-table {
+    width: 90%; /* Ajusta el tamaño de la tabla */
+    margin: 0 auto;
+  }
+
+  #plans-table th, #plans-table td {
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  #video-container {
+    max-width: 95%;
+    margin: 30px auto;
+  }
+
+  #table-info{
+    font-size: 3.8vw;
+    max-width: 80%;
+    padding: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+  }
+}

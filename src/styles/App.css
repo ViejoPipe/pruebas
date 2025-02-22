@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  font-family: 'Instrument Sans', sans-serif;
+  background-color: #f4f4f4;
+}
+
+.main-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Asegúrate que estos estilos estén en WhatsAppButton.css */
+.whatsapp-button {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  z-index: 10000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 300px; /* Ajusta según la altura de tu navbar */
+}

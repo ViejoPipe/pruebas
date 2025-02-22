@@ -1,0 +1,93 @@
+.testimonials-section {
+  text-align: center;
+  padding: 20px 20px;
+  background: #f9f9f9;
+}
+
+.section-header h1 {
+  font-size: 2.5rem;
+  color: #0033A0;
+  margin-bottom: 3.5%;
+}
+
+.testimonials-container {
+  max-width: 1000px;
+  margin: auto;
+  padding-bottom: 3%;
+}
+
+.testimonial-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.test-card-body {
+  padding: 15px;
+}
+
+.quote i {
+  font-size: 24px;
+  color: #f39c12;
+}
+
+.quote h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.test-card-body p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.ratings i {
+  color: #0033A0;
+  margin: 0 2px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.profile-image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 3px solid #03abc7;
+}
+
+.profile-desc span {
+  display: block;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.swiper-container {
+  padding: 20px 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #0033A0 !important;
+}
+
+
+@media (max-width: 768px) {
+  .section-header h1{
+    font-size: 1.8rem;
+  } 
+}

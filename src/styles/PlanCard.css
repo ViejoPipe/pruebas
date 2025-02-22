@@ -1,0 +1,133 @@
+/* PlanCard.css */
+
+#card {
+  gap: 15px;
+  width: 100%;
+  max-width: 25%;
+  min-height: 425px;
+  background-color: #fff;
+  padding: 2%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 20px;
+  view-timeline-name: --reveal;
+  animation-name: show;
+  animation-fill-mode: both;
+  animation-timeline: --reveal;
+  animation-range: entry 25% cover 50%;
+}
+
+#card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#image-container {
+  width: 100%;
+  height: 250px; /* Altura fija para la imagen */
+  margin: 0 auto 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+#image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+  border-radius: 8px;
+}
+
+#title-container {
+  width: 100%;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+#title {
+  font-size: clamp(0.9rem, 1.8vw, 1.3em);
+  color: #032c84;
+  text-decoration: none;
+}
+
+#paragraph-container {
+  width: 100%;
+  margin: 5px auto;
+  text-align: justify;
+}
+
+#paragraph {
+  font-size: clamp(0.75rem, 1vw, 0.9em);
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.72);
+  text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+  #card {
+    max-width: 30%;
+    min-height: 420px;
+  }
+  
+  #image-container {
+    height: 250px; /* Ajuste de altura para tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  #plans-title {
+    margin-bottom: 4%;
+  }
+
+  #plans-subtitle {
+    margin-bottom: 8%;
+  }
+
+  #plans-cards-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 5%;
+  }
+  #card {
+    max-width: 70%;
+    min-height: 500px;
+    margin: 1%;
+    padding: 5%; /* Aumentar padding interno */
+  }
+  
+  #image-container {
+    height: 250px;
+    margin: 0 auto 25px;
+  }
+
+  #paragraph-container {
+    width: 90%; /* Hacer el contenedor de texto más angosto */
+    margin: 15px auto;
+  }
+
+  #title-container {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  #paragraph {
+    line-height: 1.6;
+    padding: 0 5px;
+  }
+}
+
+
+@keyframes show {
+  from {
+    opacity: 0.2; scale: 80%;
+  }
+  
+  to {
+    opacity: 1; scale: 100%;
+  }
+}
